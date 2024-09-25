@@ -17,8 +17,6 @@ export default function InputBtn({text,handleInputChange})
   {
     const newInputValue=event.target.value
     setValue(newInputValue); //prevents possible error with use effect when direcly changing state 
-    console.log(text);
-    console.log(newInputValue);
     handleInputChange(newInputValue,text)
   }
 }
